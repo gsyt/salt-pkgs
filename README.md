@@ -6,11 +6,19 @@ Salt formula to set up and configure arbitrary package lists
 Requirements
 ------------
 The following pillars are available for configuration:
+```
   * pkgs:latest:salt['pillar.get']('os')
   * pkgs:installed:salt['pillar.get']('os')
   * pkgs:purged:salt['pillar.get']('os')
+``` 
+ 
 
-All packages in 'pkgs:latest:salt['pillar.get']('os')' and 'pkgs:installed:salt['pillar.get']('os')' must be available from configured repos
+All packages included in:
+```
+'pkgs:latest:salt['pillar.get']('os')' 
+'pkgs:installed:salt['pillar.get']('os')'
+```
+must be available from your configured repos
 
 Usage
 -----
