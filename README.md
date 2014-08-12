@@ -14,10 +14,10 @@ All packages in 'pkgs:latest:salt['pillar.get']('os')' and 'pkgs:installed:salt[
 
 Usage
 -----
-Apply state 'pkgs.latest' to install latest packages to target minions
-Apply state 'pkgs.present' to verify package installation in target minions
+Apply state 'pkgs.latest' to upgrade to latest packages in target minions
+Apply state 'pkgs.installed' to enforce package installation in target minions
 Apply state 'pkgs.purged' to remove packages from target minions
-State 'pkgs' is provided as an alias for 'pkgs.latest', 'pkgs.present' and 'pkgs.purged'
+State 'pkgs' is provided as an alias for 'pkgs.latest', 'pkgs.installed' and 'pkgs.purged'
 
 Compatibility
 -------------
