@@ -1,0 +1,7 @@
+pkgs:
+  latest:
+    - vim-nox
+  installed:
+    - lxc-docker
+  purged:
+    - vim-tiny

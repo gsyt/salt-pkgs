@@ -3,22 +3,9 @@ salt-pkgs
 
 Salt formula to set up and configure arbitrary package lists
 
-Requirements
+Parameters
 ------------
-The following pillars are available for configuration:
-```
-  * pkgs:latest:salt['pillar.get']('os')
-  * pkgs:installed:salt['pillar.get']('os')
-  * pkgs:purged:salt['pillar.get']('os')
-``` 
- 
-
-All packages included in:
-```
-'pkgs:latest:salt['pillar.get']('os')' 
-'pkgs:installed:salt['pillar.get']('os')'
-```
-must be available from your configured repos
+Please refer to example.pillar for a list of available pillar configuration options
 
 Usage
 -----
