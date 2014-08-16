@@ -1,8 +1,7 @@
-{%- set os = salt['grains.get']('os') -%}
-{%- set pkgnames = salt['pillar.get']('pkgs:installed:' ~ os, []) -%}
+{%- set packages = salt['pillar.get']('pkgs:installed') -%}
 
-{% if pkgnames %}
+{% if packages %}
 pkgs.installed:
   pkg.installed:
-    - pkgs: {{ pkgnames }}
+    - pkgs: {{ packages }}
 {% endif %}
