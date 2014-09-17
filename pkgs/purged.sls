@@ -3,5 +3,7 @@
 {% if packages %}
 pkgs.purged:
   pkg.purged:
-    - pkgs: {{ packages }}
+  {% for package in packages %}
+      - package
+  {% endfor %}
 {% endif %}

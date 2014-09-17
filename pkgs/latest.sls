@@ -3,5 +3,8 @@
 {% if packages %}
 pkgs.latest:
   pkg.latest:
-    - pkgs: {{ packages }}
+    - pkgs: 
+  {% for package in packages %}
+      - package
+  {% endfor %}
 {% endif %}

@@ -3,5 +3,8 @@
 {% if packages %}
 pkgs.installed:
   pkg.installed:
-    - pkgs: {{ packages }}
+    - pkgs:
+  {% for package in packages %}
+      - package
+  {% endfor %}
 {% endif %}
