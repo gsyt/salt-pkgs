@@ -5,6 +5,6 @@ pkgs.installed:
   pkg.installed:
     - pkgs:
   {% for package in packages %}
-      - package
+      - {{ package }}
   {% endfor %}
 {% endif %}

@@ -5,6 +5,6 @@ pkgs.latest:
   pkg.latest:
     - pkgs: 
   {% for package in packages %}
-      - package
+      - {{ package }}
   {% endfor %}
 {% endif %}

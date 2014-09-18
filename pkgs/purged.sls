@@ -4,6 +4,6 @@
 pkgs.purged:
   pkg.purged:
   {% for package in packages %}
-      - package
+      - {{ package }}
   {% endfor %}
 {% endif %}
